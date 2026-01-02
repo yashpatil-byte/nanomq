@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  nanomq-broker:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: nanomq-broker
+    ports:
+      - "9000:9000"
+    volumes:
+      - nanomq-data:/data
+    environment:
+      - NANOMQ_PORT=9000
+      - NANOMQ_DATA_DIR=/data
+    restart: unless-stopped
+    command: ["./build/nanomq-broker", "--port", "9000", "--data-dir", "/data"]
+
+  nanomq-cli:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: nanomq-cli
+    depends_on:
+      - nanomq-broker
+    command: ["./build/nanomq-cli", "--help"]
+    profiles:
+      - cli
+
+volumes:
+  nanomq-data:
+    driver: local
+

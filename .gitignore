@@ -1,0 +1,63 @@
+# Build directories
+build/
+cmake-build-*/
+.cmake/
+
+# Compiled files
+*.o
+*.so
+*.a
+*.dylib
+*.dll
+*.exe
+
+# Data files
+*.db
+*.wal
+*.log
+data/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+*.egg
+
+# Test output
+Testing/
+test_results/
+*.test
+
+# Profiling
+perf.data
+perf.data.old
+*.svg
+*.folded
+
+# Coverage
+*.gcda
+*.gcno
+*.gcov
+coverage/
+
+# Valgrind
+valgrind-*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
