@@ -339,10 +339,10 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ## Contact
 
-**Author**: Your Name  
-**Email**: your.email@example.com  
-**GitHub**: https://github.com/yourusername/nanomq  
-**LinkedIn**: https://linkedin.com/in/yourprofile
+**Author**: Yash Santosh Patil 
+**Email**: yashpatilcareer@gmail.com / patil.y1@northeastern.edu
+**GitHub**: https://github.com/yashpatil-byte/nanomq  
+**LinkedIn**: https://www.linkedin.com/in/yash-patil-57a53a1a6
 
 ---
 
